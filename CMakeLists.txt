@@ -35,3 +35,10 @@ else()
      set( Poco_DIR ${CMAKE_INSTALL_PREFIX}/poco-1.12.5/vc17_x64/cmake )
      find_package( Poco REQUIRED COMPONENTS Foundation )
 endif()
+
+################################################
+# Create App to test Poco
+################################################
+add_executable( MyApp main.cpp )
+target_link_libraries( MyApp PRIVATE Poco::Foundation )
+target_link_directories( MyApp PRIVATE Poco::Foundation )
