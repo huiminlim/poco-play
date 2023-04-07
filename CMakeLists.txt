@@ -42,9 +42,4 @@ endif()
 ################################################
 # Create App to test Poco
 ################################################
-add_executable( MyApp main.cpp )
-set_target_properties( MyApp
-    PROPERTIES VS_DEBUGGER_ENVIRONMENT "PATH=$<TARGET_FILE_DIR:Poco::Foundation>;"
-)
-target_link_libraries( MyApp PRIVATE Poco::Foundation )
-target_link_directories( MyApp PRIVATE Poco::Foundation )
+add_subdirectory( types )

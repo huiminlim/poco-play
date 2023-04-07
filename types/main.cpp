@@ -1,3 +1,8 @@
+// ################################################
+// # Testing the Fixed-length integer and types
+// # in Poco
+// ################################################
+
 #include <iostream>
 
 #include <Poco/Foundation.h>
