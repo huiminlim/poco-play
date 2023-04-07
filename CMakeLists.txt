@@ -13,6 +13,9 @@ set( CMAKE_INSTALL_PREFIX
 # Use folders in IDE to organize targets
 set_property( GLOBAL PROPERTY USE_FOLDERS ON )
 
+set( CMAKE_CXX_STANDARD 20 )
+set( CMAKE_CXX_STANDARD_REQUIRED ON )
+
 ################################################
 # Build dependencies as external projects
 ################################################
